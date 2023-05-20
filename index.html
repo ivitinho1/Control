@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>playstation store</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img class="logo" src="./img/logopy.png">
+      <nav>
+        <ul id="menu-list">
+          <li class="nav-li"><a href="https://www.playstation.com/pt-br/" class="nav-link">consoles</a></li>
+          <li class="nav-li"><a href="https://www.playstation.com/pt-br/accessories/?emcid=pa-3r-444443&gclid=CjwKCAiA3pugBhAwEiwAWFzwdUIv7sEFFIfljWmB57P8PmXY-EJmQ3BC1Bws91lcu40x5AGrr0PzThoC2GQQAvD_BwE" class="nav-link">acessórios</a></li>
+          <li class="nav-li"><a href="https://www.playstation.com/pt-br/accessories/dualsense-wireless-controller/" class="nav-link">controles</a></li>
+          <li class="nav-li"><a href="https://www.playstation.com/pt-br/support/?smcid=pdc%3Apt-br%3Aaccessories-dualsense-wireless-controller%3Aprimary%20nav%3Amsg-support%3Asuporte&emcid=pa-ha-430501" class="nav-link">Suporte</a></li>
+        </ul>
+      </nav>
+      <img src="./img/menu.png" alt="menu" class="menu-icon" onclick="clicaramnoMenu()">
+    </div>
+
+
+    <div class="row">
+      <div class="coluna1">
+        <h2>PS5 dualshock</h2>
+        <h3>controle sem fio para PlayStation</h3>
+        <P>controle original</P>
+        <h4>R$ 399,00</h4>
+        <button class="buy"><a href="https://www.amazon.com.br/PlayStation-Controle-5-DualSense/dp/B088GNW267/ref=asc_df_B088GNW267/?tag=googleshopp00-20&linkCode=df0&hvadid=431423537910&hvpos=&hvnetw=g&hvrand=8861570399992904125&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20089&hvtargid=pla-960340186315&psc=1">comprar agora</a> <img src="./img/arrow.png" alt="arrow"></button>
+      </div>
+
+      <div class="coluna2">
+        <img class="controler" src="./img/controle.png" alt="controle">
+        <div class="color-box"></div>
+        <button class="carrinho">
+          <img src="./img/add.png" alt="adicionar ao carrinho">
+        </button>
+      </div>
+    </div>
+
+    <div class="social-links">
+     <a href="https://www.facebook.com/PlayStationBR/?locale=pt_BR"> <img src="./img/face.png"></a>
+    <a href="https://www.instagram.com/playstation/"><img src="./img/insta.png"></a>
+    <a href="https://twitter.com/PlayStation_BR?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./img/twiter.png"></a>
+    </div>
+
+  </div>
+</body>
+<script>
+  const menuList = document.getElementById("menu-list")
+  menuList.style.maxHeight = "0px"
+  
+  function clicaramnoMenu(){
+    if (menuList.style.maxHeight == "0px"){
+        menuList.style.maxHeight = "120px"
+    } else {
+      menuList.style.maxHeight = "0px"
+    }
+}
+</script>
+
+</html>
